@@ -32,7 +32,7 @@ Para el desarrollo y buen funcionamiento de *NovaHardware* nos apoyamos de muy b
 **Herramientas de Desarrollo**
 
 - [Visual Studio Code](https://code.visualstudio.com/)
-- [GitHub (Repositorio NovaHardware)](https://github.com/J4dysIG/Proyecto-NovaHardware)
+- [GitHub (Repositorio InventarioRegistro)](https://github.com/MONIGIR/InventarioRegistro)
 - [PostgreSQL](https://www.postgresql.org/)
 - 
 **Prototipado y Diseño**
