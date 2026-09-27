@@ -1,0 +1,225 @@
+/* =========================================================
+   1. TOKENS DE DISEÑO
+   ========================================================= */
+:root {
+  --fondo:          #0D1020;
+  --tarjeta:        #1E212B;
+  --campo:          #171C2B;
+  --borde-campo:    #7B8296;
+  --texto:          #F2F4F8;
+  --texto-2:        #C3C8D4;
+  --texto-3:        #959CAE;
+  --acento:         #3DD6C3;
+  --acento-suave:   rgba(61, 214, 195, 0.08);
+  --acento-hover:   rgba(61, 214, 195, 0.16);
+  --acento-foco:    rgba(61, 214, 195, 0.30);
+  --error:          #FF7A70;
+  --error-suave:    rgba(255, 122, 112, 0.10);
+  --exito:          #6CCB89;
+
+  --radio-campo:    8px;
+  --radio-tarjeta:  4px;
+  --sombra:         0 24px 60px rgba(0, 0, 0, 0.55);
+  --fuente: "Segoe UI Variable Text", "Segoe UI", system-ui,
+            -apple-system, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* =========================================================
+   2. REINICIO MÍNIMO
+   ========================================================= */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+
+body {
+  font-family: var(--fuente);
+  color: var(--texto);
+  background-color: var(--fondo);
+  -webkit-font-smoothing: antialiased;
+}
+
+[hidden] { display: none !important; }
+
+/* =========================================================
+   3. ESCENA (fondo + centrado)
+   ========================================================= */
+.escena {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background:
+    linear-gradient(180deg, rgba(13,16,32,0.10) 0%, rgba(13,16,32,0.55) 100%),
+    url("/Mission Control/Fondo\ para\ inicio\ de\ sesión.jpg") center / cover no-repeat,
+    radial-gradient(1100px 750px at 28% 18%, #2A2E4A 0%, transparent 60%),
+    radial-gradient(900px 700px at 82% 85%, #1B1F36 0%, transparent 60%),
+    var(--fondo);
+}
+
+/* =========================================================
+   4. TARJETA
+   ========================================================= */
+.tarjeta {
+  width: min(100%, 440px);
+  padding: 36px 44px 56px;
+  background: rgba(30, 33, 43, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radio-tarjeta);
+  box-shadow: var(--sombra);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* =========================================================
+   5. ENCABEZADO
+   ========================================================= */
+.encabezado { text-align: center; margin-bottom: 32px; }
+
+.titulo {
+  margin: 0;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #B9BEC9;
+}
+
+.subtitulo {
+  margin: 2px 0 0;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--texto-2);
+}
+
+.logo {
+  display: block;
+  width: 52px;
+  height: 52px;
+  margin: 18px auto 0;
+  color: var(--texto);
+}
+
+/* =========================================================
+   6. CAMPOS
+   ========================================================= */
+.campo { margin-bottom: 20px; }
+
+.campo label {
+  display: block;
+  margin: 0 0 6px 2px;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--texto-2);
+}
+
+.campo input {
+  width: 100%;
+  height: 42px;
+  padding: 0 12px;
+  font: 400 15px/20px var(--fuente);
+  color: var(--texto);
+  background: var(--campo);
+  border: 1px solid var(--borde-campo);
+  border-radius: var(--radio-campo);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.campo input:hover { border-color: var(--texto-3); }
+
+.campo input:focus-visible {
+  outline: none;
+  border-color: var(--acento);
+  box-shadow: 0 0 0 3px var(--acento-foco);
+}
+
+.campo--error input { border-color: var(--error); }
+.campo--error input:focus-visible { box-shadow: 0 0 0 3px var(--error-suave); }
+
+.error-campo {
+  min-height: 16px;
+  margin: 4px 0 0 2px;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--error);
+}
+
+/* =========================================================
+   7. ALERTA GENERAL
+   ========================================================= */
+.alerta {
+  margin: 0 0 16px;
+  padding: 10px 12px;
+  font-size: 13px;
+  line-height: 18px;
+  border-radius: var(--radio-campo);
+  color: var(--error);
+  background: var(--error-suave);
+  border: 1px solid rgba(255, 122, 112, 0.35);
+}
+
+.alerta--exito {
+  color: var(--exito);
+  background: rgba(108, 203, 137, 0.10);
+  border-color: rgba(108, 203, 137, 0.35);
+}
+
+/* =========================================================
+   8. BOTÓN
+   ========================================================= */
+.boton {
+  width: 100%;
+  height: 42px;
+  margin-top: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font: 600 14px/20px var(--fuente);
+  color: var(--acento);
+  background: var(--acento-suave);
+  border: 1px solid var(--acento);
+  border-radius: var(--radio-campo);
+  cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.05s ease;
+}
+
+.boton:hover         { background: var(--acento-hover); }
+.boton:active        { transform: translateY(1px); }
+.boton:focus-visible { outline: 2px solid var(--acento); outline-offset: 3px; }
+.boton:disabled      { opacity: 0.6; cursor: progress; }
+
+.spinner {
+  width: 14px;
+  height: 14px;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: girar 0.7s linear infinite;
+}
+
+@keyframes girar { to { transform: rotate(360deg); } }
+
+/* =========================================================
+   9. TEXTO DE AYUDA
+   ========================================================= */
+.ayuda {
+  margin: 16px 0 0;
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--texto-3);
+}
+
+/* =========================================================
+   10. RESPONSIVO Y ACCESIBILIDAD
+   ========================================================= */
+@media (max-width: 480px) {
+  .escena  { padding: 16px; }
+  .tarjeta { padding: 28px 20px 36px; }
+  .titulo  { font-size: 26px; line-height: 32px; }
+  .campo input, .boton { height: 48px; font-size: 16px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation-duration: 0.01ms !important; }
+}

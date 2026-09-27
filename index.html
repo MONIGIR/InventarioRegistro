@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mission Control · Iniciar sesión</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="escena">
+    <section class="tarjeta" aria-labelledby="titulo">
+
+      <header class="encabezado">
+        <h1 id="titulo" class="titulo">Mission Control</h1>
+        <p class="subtitulo">Inicia sesión con tus credenciales</p>
+        <img class="logo" src="/Mission Control/marca de la verguenza blanco.png" alt=""> 
+          <circle cx="24" cy="24" r="9"></circle>
+          <path d="M5 31 C 15 22, 31 17, 43 15"></path>
+          <path d="M38 11 l5 4 -6 2"></path>
+          <path d="M15 6 C 20 17, 27 30, 33 42"></path>
+          <path d="M28 42 l5 0 1 -6"></path>
+        </svg>
+      </header>
+
+      <form id="formLogin" novalidate>
+        <div class="campo" id="grupoCorreo">
+          <label for="correo">Correo institucional</label>
+          <input id="correo" name="correo" type="email"
+                 autocomplete="username" inputmode="email"
+                 required aria-describedby="errorCorreo">
+          <p class="error-campo" id="errorCorreo" aria-live="polite"></p>
+        </div>
+
+        <div class="campo" id="grupoContrasena">
+          <label for="contrasena">Contraseña</label>
+          <input id="contrasena" name="contrasena" type="password"
+                 autocomplete="current-password"
+                 required aria-describedby="errorContrasena">
+          <p class="error-campo" id="errorContrasena" aria-live="polite"></p>
+        </div>
+
+        <p class="alerta" id="alerta" role="alert" hidden></p>
+
+        <button type="submit" class="boton" id="btnEntrar">
+          <span class="spinner" id="spinner" hidden></span>
+          <span id="textoBoton">Iniciar sesión</span>
+        </button>
+
+        <p class="ayuda">¿No tienes cuenta? Contacta al administrador del sitio.</p>
+      </form>
+
+    </section>
+  </main>
+</body>
+</html>
