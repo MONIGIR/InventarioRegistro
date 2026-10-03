@@ -1,56 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es-MX">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mission Control · Iniciar sesión</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
-</head>
-<body>
-  <main class="escena">
-    <section class="tarjeta" aria-labelledby="titulo">
-
-      <header class="encabezado">
-        <h1 id="titulo" class="titulo">Mission Control</h1>
-        <p class="subtitulo">Inicia sesión con tus credenciales</p>
-        <img class="logo" src="/Mission Control/marca de la verguenza blanco.png" alt=""> 
-          <circle cx="24" cy="24" r="9"></circle>
-          <path d="M5 31 C 15 22, 31 17, 43 15"></path>
-          <path d="M38 11 l5 4 -6 2"></path>
-          <path d="M15 6 C 20 17, 27 30, 33 42"></path>
-          <path d="M28 42 l5 0 1 -6"></path>
-        </svg>
-      </header>
-
-      <form id="formLogin" novalidate>
-        <div class="campo" id="grupoCorreo">
-          <label for="correo">Correo institucional</label>
-          <input id="correo" name="correo" type="email"
-                 autocomplete="username" inputmode="email"
-                 required aria-describedby="errorCorreo">
-          <p class="error-campo" id="errorCorreo" aria-live="polite"></p>
+  <head>
+    <style>
+      body {
+        background-image: url("mc/Fondo1.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mission Control</title>
+    <link
+      href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="envoltura">
+      <form action="">
+        <h1 class="iniciosesion">Mission Control</h1>
+        <div class="input-box">
+          <input type="text" id="correo" name="correo" required /><br />
         </div>
-
-        <div class="campo" id="grupoContrasena">
-          <label for="contrasena">Contraseña</label>
-          <input id="contrasena" name="contrasena" type="password"
-                 autocomplete="current-password"
-                 required aria-describedby="errorContrasena">
-          <p class="error-campo" id="errorContrasena" aria-live="polite"></p>
+        <div class="input-box">
+          <input type="text" id="contrasena" name="contrasena" />
+          <div>
+            <button type="submit" class="btn">Inicio</button>
+          </div>
+          <div class="recuerdame">
+            <label><input type="checkbox" />Recuerdame</label>
+          </div>
+          <div class="registro">
+            <p>En caso de no tener credenciales contacte su administrador.</p>
+            <a href="#">Contactar administrador.</a>
+          </div>
         </div>
-
-        <p class="alerta" id="alerta" role="alert" hidden></p>
-
-        <button type="submit" class="boton" id="btnEntrar">
-          <span class="spinner" id="spinner" hidden></span>
-          <span id="textoBoton">Iniciar sesión</span>
-        </button>
-
-        <p class="ayuda">¿No tienes cuenta? Contacta al administrador del sitio.</p>
       </form>
-
-    </section>
-  </main>
-</body>
+    </div>
+  </body>
 </html>
