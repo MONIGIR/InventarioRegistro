@@ -20,13 +20,24 @@
   </head>
   <body>
     <div class="envoltura">
-      <form action="">
+      <form action="" method="post">
         <h1 class="iniciosesion">Mission Control</h1>
         <div class="input-box">
-          <input type="text" id="correo" name="correo" required /><br />
+          <input
+            type="email"
+            id="correo"
+            autocomplete="username"
+            name="correo"
+            required
+          /><br />
         </div>
         <div class="input-box">
-          <input type="text" id="contrasena" name="contrasena" />
+          <input
+            type="password"
+            id="contrasena"
+            autocomplete="current-password"
+            name="contrasena"
+          />
           <div>
             <button type="submit" class="btn">Inicio</button>
           </div>
