@@ -65,7 +65,7 @@ body {
 
 .campo input:focus {
   border-color: #2dd4bf;
-  background-color: #0e3230;
+  background-color: #162326;
 }
 
 .btn {
@@ -82,6 +82,7 @@ body {
 }
 .btn:hover {
   background: #162326;
+  color: #01ffdd;
 }
 
 .nota {
@@ -93,7 +94,13 @@ body {
 
 .nota1 {
   text-align: center;
-  color: #fefefe;
+  color: #2dd4bf;
+  font-size: 0.8rem;
+  margin-top: 6px;
+}
+.nota1:hover {
+  text-align: center;
+  color: #01ffdd;
   font-size: 0.8rem;
   margin-top: 6px;
 }
