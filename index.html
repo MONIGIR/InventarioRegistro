@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="es-MX">
   <head>
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mission Control</title>
@@ -10,33 +9,23 @@
   <body>
     <div class="envoltura">
       <form action="" method="post">
-        <h1 class="iniciosesion">Mission Control</h1>
-        <div class="input-box">
-          <input
-            type="email"
-            id="correo"
-            autocomplete="username"
-            name="correo"
-            required
+        <h1 class="titulo">Mission Control</h1>
+        <p class="subtitulo">Inicia sesión con tus credenciales</p>
+        <img class="logo" src="MC/marca de la verguenza blanco.png" alt="Logo Mission Control" />
+
+        <div class="campo">
+          <label for="correo">Correo institucional</label>
+          <input type="email" id="correo" name="correo" autocomplete="username" required />
         </div>
-        <div class="inputbox">
-          <input
-            type="password"
-            id="contrasena"
-            autocomplete="current-password"
-            name="contrasena"
+
+        <div class="campo">
+          <label for="contrasena">Contraseña</label>
+          <input type="password" id="contrasena" name="contrasena" autocomplete="current-password" required />
         </div>
-          <div>
-            <button type="submit" class="btn">Inicio</button>
-          </div>
-          <div class="recuerdame">
-            <label><input type="checkbox" />Recuerdame</label>
-          </div>
-          <div class="registro">
-            <p>En caso de no tener credenciales contacte su administrador.</p>
-            <a href="#">Contactar administrador.</a>
-          </div>
-        </div>
+
+        <button type="submit" class="btn">Iniciar Sesión</button>
+
+        <p class="nota">¿No tienes cuenta?, contacta al administrador del sitio.</p>
       </form>
     </div>
   </body>

@@ -1,42 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100dvh;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100dvh;
-}
-* {
-  margin: 0;
   padding: 16px;
-  box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #1e212b url("MC/Fondo1.jpg") center / cover no-repeat;
 }
 
 .envoltura {
+  width: 100%;
   max-width: 480px;
-  max-height: 589px;
   background: #1e212b;
-  color: #1e212b;
+  border-radius: 12px;
+  padding: 48px 48px 40px;
+  color: #e5e7eb;
 }
-.envoltura h1 {
+
+.titulo {
+  color: #00bcd4;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 1.1;
+}
+
+.subtitulo {
+  color: #00bcd4;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.logo {
+  display: block;
+  width: 100px;
+  margin: 0 auto 48px;
+}
+
+.campo {
+  margin-bottom: 24px;
+}
+
+.campo label {
+  display: block;
+  color: #c9ccd3;
+  margin: 0 0 8px 6px;
+}
+
+/* Los <input> no heredan color ni fuente: hay que estilarlos directamente */
+.campo input {
+  width: 100%;
+  height: 60px;
+  padding: 0 16px;
+  background: #1a1d26;
+  border: 1px solid #8a8f9c; /* ancho + estilo + color */
+  border-radius: 10px;
   color: #ffffff;
+  font: inherit;
+  outline: none;
+}
+
+.campo input:focus {
+  border-color: #2dd4bf;
+}
+
+.btn {
+  width: 100%;
+  height: 60px;
+  margin-top: 24px;
+  background: #182429;
+  border: 1px solid #2dd4bf;
+  border-radius: 10px;
+  color: #2dd4bf;
+  font: inherit;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #1f3236;
+}
+
+.nota {
   text-align: center;
-}
-
-.input-box {
-  color: #fdfcfc;
-  text-align: center;
-  border: #2e59e6;
-}
-
-.envoltura correo {
-  background-color: #060607;
-}
-
-body {
-  background-image: url("MC/Fondo1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-color: #1e212b;
+  color: #c9ccd3;
+  font-size: 0.9rem;
+  margin-top: 16px;
 }
