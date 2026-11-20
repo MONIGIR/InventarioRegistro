@@ -53,7 +53,7 @@ Para el desarrollo y buen funcionamiento de *NovaHardware* nos apoyamos de muy b
 
 - [Figma - Prototipo Mission Control]([----](https://www.figma.com/design/uLzO2IP2zJevEALUE92yQE/Mission-Control?node-id=3-2&t=qeB6uMfcU9GhjFsG-1))
 
-#** Requisitos**
+# ** Requisitos**
 
 **Funcionales:**
 * El sistema debe permitir registrar y dar seguimiento al estado actual de los proyyectos.
