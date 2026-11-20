@@ -22,6 +22,20 @@
 **Cobertura:** 
 Para el desarrollo y buen funcionamiento de *NovaHardware* nos apoyamos de muy buenas herramientas y recursos académicos.
  
+# **2. Resumen del sistema.**
+
+**Objetivo General:** Desarrollar una aplicación web centralizada para el registro, almacenamiento, organización y recuperación de documentos, enlaces, consultas SQL e información de avance de proyectos, que garantice la trazabilidad, integridad y la disponibilidad de los activos de información mediante un modelo de datos relacional normalizado y mecanismos de búsqueda estruturada.
+
+**Funcionalidades principales:**
+* Log in de usuarios.
+*  Sistema CRUD en documentos.
+*  Organización de documentos.
+*  Estado de enlaces.
+*  Versionado de proyectos.
+*  Almacenamiento de querys.
+*  historial de modificaciones.
+*  Calsificación por motor SQL.
+
 *Recursos Tecnológicos*
 
 - [Node.js](https://nodejs.org/) 
@@ -38,4 +52,26 @@ Para el desarrollo y buen funcionamiento de *NovaHardware* nos apoyamos de muy b
 **Prototipado y Diseño**
 
 - [Figma - Prototipo Mission Control]([----](https://www.figma.com/design/uLzO2IP2zJevEALUE92yQE/Mission-Control?node-id=3-2&t=qeB6uMfcU9GhjFsG-1))
+
+#** Requisitos**
+
+**Funcionales:**
+* El sistema debe permitir registrar y dar seguimiento al estado actual de los proyyectos.
+* El sistema debe permitir organizar los enlaces y consultas SQL mediante etiquetas persoalizadas.
+* El sistema debe ser capaz de detectar y señalar visualmente los enlaces web que estén rotos o no disponibles.
+* El sistema debe permitir almacenar y organizar consultas SQL. clasificándolas según el motor de base de datos al que pertenencen.
+* El sistema  debe permitir a los usuarios agregar notas o comentarios descriptivos a los recursos guardados.
+* El sistema deberá contar con un sistema de filtrado de archivos.
+* El sistema deberá contar con una previsualización del contenido de los archivos.
+* El sistema deberá permitir eliminar archivos.
+* El sistema deberá permitir la modificación del contenido de los archivos.
+* El sistema debe registrar automáticamente la fecha, hora usuario e información original o modificada cada vez que se actualice o elimine un registro.
+* El sistema debe permitir al usuario crear, leer, modificar y eliminar registros y cualquier tipo de archivo guardado.
+*  El sistema deberá permitir el procesamiento y almacenamiento de arhcivos de cualquier tipo de formato valido.
+*  El sistema deberá contar con un gestor y inicio de sesión por roles.
+*  El sistema  deberá permitir la carga y descarga de los datos.
+*  El sistema deberá registrar los cambios relazados en los archivos y datos ingresados para llevar un seguimiento.
+
+**No Funcionales:**
+
 
