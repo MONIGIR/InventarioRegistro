@@ -73,5 +73,19 @@ Para el desarrollo y buen funcionamiento de *NovaHardware* nos apoyamos de muy b
 *  El sistema deberá registrar los cambios relazados en los archivos y datos ingresados para llevar un seguimiento.
 
 **No Funcionales:**
+* La interfaz gráfica del sistema debe estar completamente en idioma español.
+* El diseño de las pantallas debe ser intuitivo, permitiendo su uso sin necesidad de capacitación técnica avanzada.
+* El sistema debe mostrar mensajes de confirmación visuales cada vez que el usuario guarde o actualice información con éxito.
+* La plataforma debe mantener la sesión del usuario activa durante periodos de inactividad prolongados para mayor comodidad.
+* El sistema debe incluir una sección de ayuda o manual básico integrado dentro de la misma interfaz.
+* El sistema debe funcionar las 24 horas los 7 días de la semana.
+* El sistema debe cumplir con la normativa de seguridad.
+* El software debe ejecutar copias de seguridad.
+* Los permisos de modificación de la base de datos de producción deben estar restringidos únicamente al rol de Administrador Principal.
+* El software tendrá que desarrollarse bajo un esquema de uso.
+* El software tendrá que adaptarse a distintos tipos de dispositivos.
+* El tiempo de respuesta tendrá que responder en un tiempo de 400 ms.
+* El sistema tendrá que permitir el acceso e interacción simultanea de múltiples usuarios.
+* El sistema será diseñado para facilitar la modificación, corrección, mejora y actualización del sistema.
 
 
