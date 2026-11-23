@@ -53,6 +53,9 @@ Para el desarrollo y buen funcionamiento de *NovaHardware* nos apoyamos de muy b
 
 - [Figma - Prototipo Mission Control]([----](https://www.figma.com/design/uLzO2IP2zJevEALUE92yQE/Mission-Control?node-id=3-2&t=qeB6uMfcU9GhjFsG-1))
 
+## **Diagrama de arquitectura**
+![](https://github.com/MONIGIR/InventarioRegistro/blob/6359d4b1be297af8de9f6f4eaf482dc3323c72a5/Diagrama%20de%20arquitectura.png)
+
 # **3. Requisitos**
 
 **Funcionales:**
@@ -87,8 +90,5 @@ Para el desarrollo y buen funcionamiento de *NovaHardware* nos apoyamos de muy b
 * El tiempo de respuesta tendrá que responder en un tiempo de 400 ms.
 * El sistema tendrá que permitir el acceso e interacción simultanea de múltiples usuarios.
 * El sistema será diseñado para facilitar la modificación, corrección, mejora y actualización del sistema.
-
-## **Diagrama de arquitectura**
-![](https://github.com/MONIGIR/InventarioRegistro/blob/6359d4b1be297af8de9f6f4eaf482dc3323c72a5/Diagrama%20de%20arquitectura.png)
 
 
