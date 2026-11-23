@@ -88,4 +88,7 @@ Para el desarrollo y buen funcionamiento de *NovaHardware* nos apoyamos de muy b
 * El sistema tendrá que permitir el acceso e interacción simultanea de múltiples usuarios.
 * El sistema será diseñado para facilitar la modificación, corrección, mejora y actualización del sistema.
 
+## **Diagrama de arquitectura**
+![](https://github.com/MONIGIR/InventarioRegistro/blob/6359d4b1be297af8de9f6f4eaf482dc3323c72a5/Diagrama%20de%20arquitectura.png)
+
 
